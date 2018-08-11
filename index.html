@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>INDEX</title>
+	</head>
+	<body>
+		<h2>HTML5 新标签:meter</h2>
+		<P>
+			<meter id="xz" max="100" min="0" value="0" style="width: 400px;"></meter>
+		</p>
+		
+		<video width="400" height="300" controls="controls" poster="images/1035993.jpg">
+            <source src="mp4/Uzi-and-Ming.mp4" type="video/mp4"></source>
+            <source src="mp4/Uzi-and-Ming.mp4" type="video/webm"></source>
+            <object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+                <param name="movie" value="myvideo.swf" />
+                <param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+            </object>
+        </video>
+		
+		<script>
+		
+		
+		var t =	setInterval(function(){
+				var value = document.getElementById("xz").value;
+				if(value==100){
+					alert("加载完成!");
+					clearInterval(t); 
+				}else{
+					document.getElementById("xz").value = value+1;
+				}
+				
+				
+			
+			}, 100);
+		
+		</script>
+		
+	</body>
+</html>
